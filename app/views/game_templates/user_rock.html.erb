@@ -14,25 +14,23 @@
   <div class="container">
     <div class="row mb-medium">
       <div class="one-third">
-        <a class="button" href="/rock.html">
+        <a class="button" href="/rock">
           Play Rock
         </a>
       </div>
 
       <div class="one-third">
-        <a class="button" href="/paper.html">
+        <a class="button" href="/paper">
           Play Paper
         </a>
       </div>
 
       <div class="one-third">
-        <a class="button" href="/scissors.html">
+        <a class="button" href="/scissors">
           Play Scissors
         </a>
       </div>
     </div>
-
-    <% comp_move = ["rock", "paper", "scissors"].sample %>
 
     <div class="row mb-medium">
       <div class="one-half">
@@ -46,7 +44,7 @@
       <div class="one-half">
         <div class="computer-card centered">
           <h2>
-            They played <%= comp_move%>!
+            They played <%= @comp_move%>!
           </h2>
         </div>
       </div>
@@ -56,13 +54,7 @@
       <div class="two-thirds">
         <div class="outcome-card centered">
           <h2>
-            <% if comp_move == "rock" %>
-                We tied!
-            <% elsif comp_move == "paper" %>
-                We lost!
-            <% elsif comp_move == "scissors" %>
-                We won!
-            <% end %>
+            We <%= @outcome %>!
           </h2>
         </div>
       </div>
