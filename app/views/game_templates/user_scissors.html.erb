@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>You played rock!</title>
+  <title>You played scissors!</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
@@ -38,7 +38,7 @@
       <div class="one-half">
         <div class="player-card centered">
           <h2>
-            We played rock!
+            We played scissors!
           </h2>
         </div>
       </div>
@@ -57,11 +57,11 @@
         <div class="outcome-card centered">
           <h2>
             <% if comp_move == "rock" %>
-                We tied!
-            <% elsif comp_move == "paper" %>
                 We lost!
-            <% elsif comp_move == "scissors" %>
+            <% elsif comp_move == "paper" %>
                 We won!
+            <% elsif comp_move == "scissors" %>
+                We tied!
             <% end %>
           </h2>
         </div>
